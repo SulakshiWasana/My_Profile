@@ -1,7 +1,7 @@
-#Sulakshi Wasana
+Sulakshi Wasana
 
-##GDSE57
+GDSE57
 
-##Hello There...!
+Hello There...!
 
 ![This is an image](assets/images/image1.jpg)
