@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Night Rider Kitt Animation</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <style>
+
+        section {
+            height: 10vh;
+            width: 75vw;
+            display: flex;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        section > div {
+            width: 15vw;
+            border: 1px solid black;
+        }
+
+
+        body > div {
+            width: 100vw;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 35vh;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div style="background-color: #800000"></div>
+    <div style="background-color: #b61515"></div>
+    <div style="background-color: #fc6060"></div>
+    <div style="background-color: #f6c3c3"></div>
+    <div style="background-color: #ffffff"></div>
+</section>
+<div>
+    <button id="btnStart" class="btn btn-primary">Start</button>
+    <button id="btnStop" class="btn btn-dark">Stop</button>
+</div>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/JavaScript/jquery/jquery-3.6.0.min.js"></script>
+<script src="assets/JavaScript/KITT_Animation.js"></script>
+</body>
+</html>
