@@ -1,222 +1,269 @@
 <!DOCTYPE html>
-
-<!---Main Root-->
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-
-<!Document metadata-->
+<html lang="en">
 <head>
-    <style>
-        t
-    </style>
-    <title>Sulakshi Wasana</title>
-    <link rel="icon" href="assets/icons/icon.png">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
     <meta name="Keywords" content="Sulakshi Wasana,Sula">
     <meta name="description" content="It's about me...">
     <meta name="viewport" content="width=device-width initial-scale-1">
-    <meta name="theme-color" content="red">
-    <link rel="stylesheet" href="test.css">
-    <!--  <meta http-equiv="refresh" content="3;https://ijse.lk/"/>-->
+    <link rel="icon" href="assets/icons/icon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/preLoader.css">
 </head>
 
-<!--our content-->
-<!--sectioning root-->
+<!--adding preloader to web page-->
+<div id="preLoader">
+    <img src="assets/gif/Spin-1s-200px2.gif" alt="">
+</div>
+
 <body>
-<!--content sectioning-->
-<header>
-    <nav>
-        <a style="color:#bd8639" href="Home">Home | </a>
-        <a style="color:#bd8639" href="About Me">About Me | </a>
-        <a style="color:#bd8639" href="Resume">Resume | </a>
-        <a style="color:#bd8639" href="Skills">Skills | </a>
-        <a style="color:#bd8639" href="Projects">Projects | </a>
-        <a style="color:#bd8639" href="Contact Me">Contact Me </a></br>
-    </nav>
-</header>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/images/HomePage/1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>A Creative Freelancer & Software Developer</p>
+            <h1>Hi, I'm <span>Sulakshi Wasana</span> <br> From Colombo, Sri Lanka</h1>
+        </div>
+    </div>
+</div>
 
-<main>
-    <section>
-        <!--Home Page-->
-        <section>
-            <img src="assets/images/HomePage/homePageImage.JPG" width="350">
-            <aside>
-                <h1>Sulakshi Wasana</h1>
-            </aside>
-            <aside>
-                <h3>A Creative Freelancer & Software Developer</h3>
-            </aside>
-            <aside>
-                <a href="https://www.facebook.com/sulakshi.wasana.963"><img src="assets/images/HomePage/facebooklogo.png"></a>
-                <a href="https://www.linkedin.com/in/sulakshi-wasana-93090a224/"><img src="assets/images/HomePage/linkedinlogo.png"></a>
-                <a href="https://www.linkedin.com/in/sulakshi-wasana-93090a224/"><img src="assets/images/HomePage/twitterlogo.png"></a>
-                <a href="https://github.com/SulakshiWasana"><img src="assets/images/HomePage/githublogo.png"></a>
-                <a href="https://www.linkedin.com/in/sulakshi-wasana-93090a224/"><img src="assets/images/HomePage/pinterestlogo.png"></a>
-            </aside>
-        </section>
-
-        <!--About Me-->
-        <section>
-            <div>
-                <h3><i>DISCOVER</i></h3>
+<!----------------------------about me------------------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/images/AboutMe/user.png">
             </div>
-            <div>
-                <h1><b>ABOUT ME</b></h1>
-            </div>
-            <img src="assets/images/AboutMe/aboutImage.jpeg" width="250">
-            <aside>
-                <h2>Hi There! I am Sulakshi Wasana</h2>
-            </aside>
-            <article>
-                I am a creative freelance software developer from Colombo,<br>
-                Sri Lanka. I'm very passionate and dedicated to my work.<br>
-                I have acquired the skills necessary to build great and premium<br>
-                Softwares and Websites.
-            </article><br>
-            <aside style="background-color: #323539 ">
-                Name : L.Y.N.Sulakshi Wasana<br>
-                Address : 246/6, Delgahawatta Road, Mulleriyawa New Town.<br>
-                Age : 21<br>
-                Phone : 076-3010426<br>
-                Email : nimeshasulakshiwasana@gmail.com<br>
-            </aside><br>
-            <aside>
-                <button>Download CV</button>
-            </aside>
-        </section>
-        <br>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p style="font-size: 20px">
+                    I am a creative freelance software developer from Colombo,Sri Lanka.
+                    I'm very passionate and dedicated to my work.
+                    I have acquired the skills necessary to build great and premium Softwares and Websites.<br>
+                </p><br>
 
-        <!--Resume-->
-        <section>
-            <div>
-                <h1><b>MY RESUME</b></h1>
-            </div>
-            <!--Diploma-->
-            <article>
-                <h4 style="color:#bd8639">Diploma in Software Engineering - 2020 - up to now</h4>
-            </article>
-            <article>
-                I am following Graduate Diploma in Software Engineering at<br>
-                Institute of java & Software Engineering ( IJSE )<br>
-                Panadura
-            </article>
-            <!-- A/L -->
-            <article>
-                <h4 style="color:#bd8639">Advanced Level Examination - 2019 - 2020</h4>
-            </article>
-            <article>
-                I have already passed my GCE ( Advanced Level )<br>
-                Examination at Ananda Balika Vidyalaya<br>
-                Colombo 10
-            </article>
-            <!-- O/L -->
-            <article>
-                <h4 style="color:#bd8639">Ordinary Level Examination - 2015 - 2016</h4>
-            </article>
-            <article>
-                I have already passed my GCE ( Ordinary Level )<br>
-                Examination at Ananda Balika Vidyalaya<br>
-                Colombo 10
-            </article>
-        </section>
-        <br>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')"><b>Education</b></p>
+                    <p class="tab-links" onclick="opentab('other1')"><b>Other</b></p>
+                </div>
 
-        <!--Skils-->
-        <section>
-            <div>
-                <h1><b>MY SKILLS</b></h1>
-            </div>
-            <aside>
-                <img src="assets/images/Skils/javalogo.jpg" width="50">
-                <img src="assets/images/Skils/hibernatelogo.png" width="50">
-                <img src="assets/images/Skils/htmllogo.jpg" width="50">
-                <img src="assets/images/Skils/photoshoplogo.jpg" width="50">
-                <img src="assets/images/Skils/cssslogo.jpg" width="50">
-                <img src="assets/images/Skils/mysqllogo.png" width="60">
-            </aside>
-        </section>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span><b>Diploma in Software Engineering - 2020 - up to now</b></span><br>I am following Graduate Diploma in Software Engineering at
+                            Institute of java & Software Engineering ( IJSE )
+                            Panadura</li><br>
+                        <li><span><b>Advanced Level Examination - 2019 -  2020</b></span><br>I have already passed my GCE ( Advanced Level )
+                            Examination at Ananda Balika Vidyalaya
+                            Colombo 10</li><br>
+                        <li><span><b>Ordinary Level Examination - 2015 - 2016</b></span><br>I have already passed my GCE ( Ordinary Level )
+                            Examination at Ananda Balika Vidyalaya
+                            Colombo 10</li>
+                    </ul>
+                </div>
 
-        <!--Project-->
-        <section>
-            <div>
-                <h1><b>MY PROJECTS</b></h1>
-            </div>
-            <div class="slide.containeer">
-                <span class="slider span" id="slider-span1"></span>
-                <span class="slider span" id="slider-span2"></span>
-                <span class="slider span" id="slider-span3"></span>
-                <span class="slider span" id="slider-span4"></span>
-
-                <div class="image-slider">
-                    <div class="slide-div" id="slide-1">
-                        <img src="assets/images/Projects/supermarket.jpg"alt=""class="img"id="img1">
-                        <a href="#slider-span1" class="button" id="button-1"></a>
-                    </div>
-                    <div class="slide-div" id="slide-1">
-                        <img src="assets/images/Projects/vehicle.jpg"alt=""class="img"id="img1">
-                        <a href="#slider-span2" class="button" id="button-1"></a>
-                    </div>
-                    <div class="slide-div" id="slide-1">
-                        <img src="assets/images/Projects/Roomresevation.jpg"alt=""class="img"id="img1">
-                        <a href="#slider-span3" class="button" id="button-1"></a>
-                    </div>
-                    <div class="slide-div" id="slide-1">
-                        <img src="assets/images/Projects/Class.jpg"alt=""class="img"id="img1">
-                        <a href="#slider-span4" class="button" id="button-1"></a>
-                    </div>
+                <div class="tab-contents" id="other1">
+                    <ul>
+                        <li><span><b>IJSE Annual Hackathon " Deep Mind 2022 "</b></span><br>I actively participated as a rider in this hackathon event.</li><br>
+                        <li><span><b>IJSE Cricket Tournament 2022 - TECHIE BLASTERS</b></span><br>I actively participated as a team member and our team won the 1st runner-up in the tournament. </li><br>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</div>
 
-        <!--Contact Me-->
-        <section>
-            <!--            <div></div>-->
-            <!--            <address></address>-->
-            <!--            <img src="">-->
-            <!--            <aside></aside>-->
-            <!--            <img src="">-->
-            <!--            <aside></aside>-->
-            <!--            <img src="">-->
-            <!--            <form>-->
-            <!--                <label for="fname">Name:</label><br>-->
-            <!--                <input type="text" id="fname" name="fname"><br>-->
-            <!--                <label for="lname">Last name:</label><br>-->
-            <!--                <input type="text" id="lname" name="lname">-->
-            <!--                <button>Send</button>-->
-            <!--            </form>-->
+<!----------------------------skills------------------------------>
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1><br>
+        <div class="skills-list">
             <div>
-                <h3><i>GET IN TOUCH</i></h3>
-                <h1><b>CONTACT ME</b></h1>
+                <i class="fa-brands fa-java"></i><br>
+                <h2>Java</h2><br>
+                <p>I have skills in developing desktop applications using java & java-fx</p><br>
+                <a href="#">Learn more</a>
             </div>
-            <article>
-                <h5>LOCATION</h5>
-                <p>246/6, Delgahawatta Road, Mulleriyawa New Town.</p>
-                <img src="assets/images/Contacts/location.png">
-            </article>
-            <article>
-                <h5>EMAIL</h5>
-                <p>nimeshasulakshiwasana@gmail.com</p>
-                <img src="assets/images/Contacts/Email.png">
-            </article>
-            <article>
-                <h5>PHONE</h5>
-                <p>076-3010426</p>
-                <img src="assets/images/Contacts/contact.png">
-            </article>
-            <form action="">
-                <fieldset>
-                    <legend>Write to me</legend>
-                    <input  id="txtName" type="text" placeholder="Name"> </br></br>
-                    <input  id="txtEmail" type="text" placeholder="Email"> </br></br>
-                    <input  id="txtSubject" type="text" placeholder="Subject"> </br></br>
-                    <textarea id="txtMsg" placeholder="Message"></textarea></br></br>
-                    <button>Send</button>
-                </fieldset>
-            </form>
-        </section>
+            <div>
+                <i class="fa-solid fa-code"></i><br>
+                <h2>HTML, CSS, JavaScript</h2><br>
+                <p>I have skills in creating attractive web designs using HTML,CSS & JavaScript</p><br>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i><br>
+                <h2>My SQL</h2><br>
+                <p>I have skills to create database for file based system and manipulate database using database language</p><br>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i><br>
+                <h2>My SQL</h2><br>
+                <p>I have skills to create database for file based system and manipulate database using database language</p><br>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    </section>
-</main>
-<footer>
+<!----------------------------projects------------------------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1><br>
+        <div class="project-list">
+            <div class="project">
+                <img src="assets/images/Projects/1.png">
+                <div class="layer">
+                    <h3>Class Management System</h3><br>
+                    <p>Java based desktop application is developed using MVC architecture.</p><br>
+                    <a href="https://github.com/SulakshiWasana/Sejong_Academy"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="assets/images/Projects/2.png">
+                <div class="layer">
+                    <h3>Supermarket System</h3><br>
+                    <p>Java based desktop application is developed using Layered architecture.</p><br>
+                    <a href="https://github.com/SulakshiWasana/Lankan_Store"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="assets/images/Projects/3.png">
+                <div class="layer">
+                    <h3>Room Reservation System</h3><br>
+                    <p>Java-fx based mobile application for Room Reservation.</p><br>
+                    <a href="https://github.com/SulakshiWasana/Room_Reservation_App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="assets/images/Projects/4.png">
+                <div class="layer">
+                    <h3>Class Management System</h3><br>
+                    <p>Java-fx based desktop application for vehicle parking system.</p><br>
+                    <a href="https://github.com/SulakshiWasana/Vehical_Parking_System"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="assets/images/Projects/5.webp">
+                <div class="layer">
+                    <h3>CSS Assignments</h3><br>
+                    <p>This assignments done by using css knowledge. </p><br>
+                    <a href="https://github.com/SulakshiWasana/CSS_Assignments"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="assets/images/Projects/6.jpg">
+                <div class="layer">
+                    <h3>JS Assignments</h3><br>
+                    <p>This assignments done by using js knowledge.</p><br>
+                    <a href="https://github.com/SulakshiWasana/JS_Assignments"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-</footer>
+<!----------------------------contact me------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1><br>
+                <p><i class="fa-solid fa-paper-plane"></i>nimeshasulakshiwasana@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>076-3010426</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sulakshi.wasana.963"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/SulakshiWasana"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.linkedin.com/in/sulakshi-wasana-yaddehige-93090a224/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://twitter.com/sulakshi_wasana"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://pin.it/PNKRi1A"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <a href="assets/pdf/My%20CV.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sulakshi Wasana  <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/15d1dd0e65.js" crossorigin="anonymous"></script>
+<script src="assets/jQuery/jquery-3.6.4.min.js"></script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sideMenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sideMenu.style.right = "0";
+    }
+    function closemenu() {
+        sideMenu.style.right = "-200px"
+    }
+
+</script>
+
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyOib5sCv-M_GEpVZBXHBIR96uffbqDOCSAHcL9GDql54PCzzuaJNzW4SZnsyyXXiya/exec"
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("#msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully !"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script>
+    $(document).ready(()=>{
+        setTimeout(()=>{
+            $('#preLoader').css("display", "none");
+        },1000)
+    })
+</script>
+
+
 </body>
 </html>
